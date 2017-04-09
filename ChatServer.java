@@ -90,7 +90,7 @@ public class ChatServer extends Frame {
 		setVisible(true);
 		sendText.requestFocus();
 	}
-
+	
 	public static void sendMessage(Socket sockets, String s) {
 		try {
 			DataOutputStream dos = new DataOutputStream(sockets.getOutputStream());

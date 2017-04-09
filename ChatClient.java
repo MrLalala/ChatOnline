@@ -95,7 +95,17 @@ System.out.println(sendText.getText());
 			System.out.println("不正确的主机地址");
 		} catch (IOException e) {
 			// TODO 自动生成的 catch 块
-			System.out.println("对方以下线");
+			showInf.append("\n\t\t对方以下线,5s后退出\n\n");
+			try {
+				for(int i = 5;i>0;i--){
+					showInf.append("\n\t\t\t"+i+"s\n\n");
+					Thread.sleep(1000);
+				}
+				System.exit(0);
+			} catch (InterruptedException e1) {
+				// TODO 自动生成的 catch 块
+				e1.printStackTrace();
+			}
 		}
 	}
 }
