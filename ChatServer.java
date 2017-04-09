@@ -41,7 +41,6 @@ public class ChatServer extends Frame {
 		sendText.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent e) {
 				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-					System.out.println(sendText.getText());
 					// ∑¢ÀÕ–≈œ¢
 					try {
 						sendMessage(sockets, sendText.getText());
