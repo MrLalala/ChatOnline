@@ -36,7 +36,7 @@ public class ChatClient extends Frame {
 		sendText.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent e){
 				if(e.getKeyCode() == KeyEvent.VK_ENTER){
-System.out.println(sendText.getText());
+//System.out.println(sendText.getText());
 					sendMessage(sendText.getText());
 					sendText.setText("");
 				}
@@ -59,7 +59,7 @@ System.out.println(sendText.getText());
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO 自动生成的方法存根
-System.out.println(sendText.getText());
+//System.out.println(sendText.getText());
 				sendMessage(sendText.getText());
 				sendText.setText("");
 				sendText.requestFocus();
@@ -79,10 +79,9 @@ System.out.println(sendText.getText());
 			}
 		} catch (IOException e) {
 			// TODO 自动生成的 catch 块
-			showInf.append("\n\t\t对方已离线\n");
+			showInf.append("\n\t\t对方已离线\n");	
 		}
 	}
-	
 	
 	public static void main(String[] args) {
 		new ChatClient("ChatClient");
@@ -95,7 +94,7 @@ System.out.println(sendText.getText());
 			System.out.println("不正确的主机地址");
 		} catch (IOException e) {
 			// TODO 自动生成的 catch 块
-			showInf.append("\n\t\t对方以下线,5s后退出\n\n");
+			showInf.append("\n\t\t对方不在线,5s后退出\n\n");
 			try {
 				for(int i = 5;i>0;i--){
 					showInf.append("\n\t\t\t"+i+"s\n\n");
