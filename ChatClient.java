@@ -73,8 +73,8 @@ public class ChatClient extends Frame {
 		try {
 			DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
 			if(s != null){
-				showInf.append(new Date().toString()+"\n");
-				showInf.append(s+"\n");
+				//showInf.append(new Date().toString()+"\n");
+				//showInf.append(s+"\n");
 				dos.writeUTF(s);
 			}
 		} catch (IOException e) {

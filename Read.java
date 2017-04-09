@@ -22,7 +22,7 @@ class Read extends Thread {
 				String temp = dis.readUTF();
 				if (temp != null) {
 					showInf.append(new Date().toString()+"\n");
-					showInf.append(socket.getPort() + ":\t" + temp+"\n");
+					showInf.append(temp+"\n");
 				}
 			}
 		} catch (Exception e) {
