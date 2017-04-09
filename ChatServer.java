@@ -59,7 +59,6 @@ public class ChatServer extends Frame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO 自动生成的方法存根
-				System.out.println(sendText.getText());
 				try {
 					sendMessage(sockets, sendText.getText());
 				} catch (NullPointerException e2) {

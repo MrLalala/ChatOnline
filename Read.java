@@ -27,7 +27,7 @@ class Read extends Thread {
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
-System.out.println("Read Error");
+			showInf.append("\n\n\t\t对方已离线\n\n");
 		} finally {
 			try {
 				dis.close();

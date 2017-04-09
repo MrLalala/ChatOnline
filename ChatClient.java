@@ -27,7 +27,7 @@ public class ChatClient extends Frame {
 	public ChatClient(String name) {
 		// TODO 自动生成的构造函数存根
 		super(name);
-		setBounds(200, 200, 400, 400);
+		setBounds(600, 200, 400, 400);
 		add(showInf, BorderLayout.CENTER);
 		buttom.add(sendText, BorderLayout.CENTER);
 		buttom.add(send, BorderLayout.EAST);
